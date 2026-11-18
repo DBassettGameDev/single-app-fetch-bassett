@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holiday Finder</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Holiday Finder</h1>
+    <p>Type a date to see if it's a public holiday. (2026 only)</p>
+  </header>
+
+  <main>
+    <form id="holiday-form">
+      <label for="date-input">Date</label>
+      <input type="text" id="date-input" placeholder="e.g. 06-19-2026">
+
+      <label for="country-select">Country</label>
+      <select id="country-select">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="gb">United Kingdom</option>
+        <option value="mx">Mexico</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="jp">Japan</option>
+      </select>
+
+      <button type="submit">Find Holiday</button>
+    </form>
+
+    <section id="result" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>
+    Dylan Bassett MI349
+    </p>
+    <p>Public holiday information from
+      <a href="https://caldays.com">caldays</a>
+      (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).
+    </p>
+  </footer>
+</body>
+</html>
